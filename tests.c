@@ -6,7 +6,7 @@
 /*   By: dde-fite <dde-fite@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 21:31:46 by david             #+#    #+#             */
-/*   Updated: 2025/10/16 19:37:52 by dde-fite         ###   ########.fr       */
+/*   Updated: 2025/10/17 16:54:01 by dde-fite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,8 +44,7 @@ static void	ft_print_header(void)
 		"╚════════════════════════════════════════════════════════════╝\n"
 		"                       d d e - f i t e\n"
 		"**************************************************************\n\n\n"
-		"For now, functions designed to directly modify the value of\n"
-		"their arguments do not have return verification in the tests.\n\n"
+		"Functions beginning with // are in progress.\n\n"
 		"» Select a function:\n"
 		"\n╭───────────── LIBC FUNCTIONS ──────────────╮\n"
 		"│ **  1. isalpha       **  2. isdigit       │\n"
@@ -64,49 +63,49 @@ static void	ft_print_header(void)
 		"\n***** --------> ");
 }
 
-// int	main(void)
-// {
-// 	int		usr_choice;
-// 	t_test	test;
+int	main(void)
+{
+	int		usr_choice;
+	t_test	test;
 
-// 	srand(time(NULL));
-// 	usr_choice = 1;
-// 	while (usr_choice != 0)
-// 	{
-// 		ft_print_header();
-// 		scanf("%d", &usr_choice);
-// 		if (usr_choice == 1)
-// 			test = test_ft_isalpha();
-// 		else if (usr_choice == 2)
-// 			test = test_ft_isdigit();
-// 		else if (usr_choice == 3)
-// 			test = test_ft_isalnum();
-// 		else if (usr_choice == 4)
-// 			test = test_ft_isascii();
-// 		else if (usr_choice == 5)
-// 			test = test_ft_isprint();
-// 		else if (usr_choice == 6)
-// 			test = test_ft_strlen();
-// 		else if (usr_choice == 11)
-// 			test = test_ft_strlcpy();
-// 		else if (usr_choice == 12)
-// 			test = test_ft_strlcat();
-// 		else if (usr_choice == 13)
-// 			test = test_ft_toupper();
-// 		else if (usr_choice == 14)
-// 			test = test_ft_tolower();
-// 		else if (usr_choice == 15)
-// 			test = test_ft_strchr();
-// 		else if (usr_choice == 16)
-// 			test = test_ft_strrchr();
-// 		else if (usr_choice == 17)
-// 			test = test_ft_strncmp();
-// 		if (test.fn_name != NULL)
-// 			printf("\n╔══════════════════════════════╗\n"
-// 				"║ Summary (%s)         ║\n"
-// 				"║ ✅ Passed: %d                 ║\n"
-// 				"║ ❌ Failed: %d                 ║\n"
-// 				"╚══════════════════════════════╝\n",
-// 				test.fn_name, test.pass, test.fail);
-// 	}
-// }
+	srand(time(NULL));
+	usr_choice = 1;
+	while (usr_choice != 0)
+	{
+		ft_print_header();
+		scanf("%d", &usr_choice);
+		if (usr_choice == 1)
+			test = test_ft_isalpha();
+		else if (usr_choice == 2)
+			test = test_ft_isdigit();
+		else if (usr_choice == 3)
+			test = test_ft_isalnum();
+		else if (usr_choice == 4)
+			test = test_ft_isascii();
+		else if (usr_choice == 5)
+			test = test_ft_isprint();
+		else if (usr_choice == 6)
+			test = test_ft_strlen();
+		else if (usr_choice == 11)
+			test = test_ft_strlcpy();
+		else if (usr_choice == 12)
+			test = test_ft_strlcat();
+		else if (usr_choice == 13)
+			test = test_ft_toupper();
+		else if (usr_choice == 14)
+			test = test_ft_tolower();
+		else if (usr_choice == 15)
+			test = test_ft_strchr();
+		else if (usr_choice == 16)
+			test = test_ft_strrchr();
+		else if (usr_choice == 17)
+			test = test_ft_strncmp();
+		if (test.fn_name != NULL)
+			printf("\n╔══════════════════════════════╗\n"
+				"║ Summary (%s)         ║\n"
+				"║ ✅ Passed: %d                 ║\n"
+				"║ ❌ Failed: %d                 ║\n"
+				"╚══════════════════════════════╝\n",
+				test.fn_name, test.pass, test.fail);
+	}
+}
