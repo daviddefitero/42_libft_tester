@@ -6,7 +6,7 @@
 #    By: dde-fite <dde-fite@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/15 21:44:11 by dde-fite          #+#    #+#              #
-#    Updated: 2025/10/17 16:52:30 by dde-fite         ###   ########.fr        #
+#    Updated: 2025/10/21 16:47:30 by dde-fite         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,11 +24,12 @@ DIST		= ./dist_libft
 
 # GCC COMPILER
 CC			= cc
-CFLAGS		= -o ${NAME} -Wall -Wextra
+CFLAGS		= -o ${NAME} -Wall -Wextra -Werror -lbsd
 
 # OTHER COMMANDS
 RM			= rm
 CP			= cp
+MKDIR			= mkdir
 
 # COLORS
 GREEN		:= \033[1;32m
@@ -40,7 +41,7 @@ RED			:= \033[1;31m
 RESET		:= \033[0m
 
 # ********************************** RULES  ********************************** #
-${NAME}: ${SRC} clean
+${NAME}: ${SRC} ${DIST} clean
 	@echo -e "${PURPLE}╔═════════════════════════════════════════════════════════════════════════╗"
 	@echo "║                              LIBFT TESTER                               ║"
 	@echo "║                     by daviddefitero — 42 Madrid                        ║"
@@ -56,6 +57,10 @@ ${NAME}: ${SRC} clean
 	@${CC} ${CFLAGS} ${SRC} ${DIST}/libft.a
 	@echo "Process completed :)"
 	@echo ""
+
+${DIST}:
+	@echo "Creating the dist folder"
+	@${MKDIR} -p ${DIST}
 
 all: ${NAME}
 
