@@ -6,7 +6,7 @@
 #    By: dde-fite <dde-fite@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/15 21:44:11 by dde-fite          #+#    #+#              #
-#    Updated: 2025/10/29 19:50:09 by dde-fite         ###   ########.fr        #
+#    Updated: 2025/10/29 20:07:54 by dde-fite         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,8 @@ SHELL := /bin/bash
 
 # FILES
 NAME			= libft_tester
-LIBFT_PATH		= ../42_libft
+LIBFT_PATH		= ..
+# LIBFT_PATH	= ../42_libft
 SRC_FOLDER		= src
 INCLUDE_FOLDER	= include
 DIST_FOLDER		= dist_libft
@@ -87,7 +88,7 @@ ${DIST_FOLDER}:
 	@echo -e "Creating the DIST_FOLDER folder\n"
 	@${MKDIR} -p ${DIST_FOLDER}
 	@echo -e "Cloning YOUR libft ...\n"
-	@${CP} -rf ${LIBFT_PATH}/* ${DIST_FOLDER}/
+	@rsync -av --exclude='$(notdir $(CURDIR))/' --exclude='.git/' ${LIBFT_PATH}/ ${DIST_FOLDER}/
 
 ${DIST_FOLDER}/libft.a: ${DIST_FOLDER}
 	@echo -e "${GREEN}--------------LIBFT-COMPILATION---------------"

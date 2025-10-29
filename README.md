@@ -42,6 +42,7 @@ This work is published under the terms of <a href="https://github.com/gcamerli/4
 # Requirements
 The source code and Makefile are designed for use in a UNIX-like environment; any use outside this scope does not guarantee correct or efficient operation.
 - Make
+- Rsync (usually native in linux distributions)
 - GCC
 
 # Usage
