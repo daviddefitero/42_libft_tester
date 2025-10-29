@@ -6,11 +6,11 @@
 /*   By: dde-fite <dde-fite@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/17 21:51:29 by dde-fite          #+#    #+#             */
-/*   Updated: 2025/10/29 16:46:23 by dde-fite         ###   ########.fr       */
+/*   Updated: 2025/10/29 19:27:02 by dde-fite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../tests.h"
+#include "tests.h"
 
 static size_t	ft_get_values(char **r_str, char **expted, char **rslt)
 {

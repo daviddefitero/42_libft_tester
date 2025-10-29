@@ -6,12 +6,12 @@
 /*   By: dde-fite <dde-fite@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/29 15:30:59 by dde-fite          #+#    #+#             */
-/*   Updated: 2025/10/05 22:57:36 by dde-fite         ###   ########.fr       */
+/*   Updated: 2025/10/29 19:27:02 by dde-fite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <ctype.h>
-#include "../tests.h"
+#include "tests.h"
 
 t_test	test_ft_isprint(void)
 {

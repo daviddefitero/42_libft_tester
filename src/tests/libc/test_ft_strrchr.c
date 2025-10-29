@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_ft_strchr.c                                   :+:      :+:    :+:   */
+/*   test_ft_strrchr.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dde-fite <dde-fite@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 22:29:38 by dde-fite          #+#    #+#             */
-/*   Updated: 2025/10/29 16:46:09 by dde-fite         ###   ########.fr       */
+/*   Updated: 2025/10/29 19:27:02 by dde-fite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../tests.h"
+#include "tests.h"
 
 static size_t	ft_get_len(char *a, char *b)
 {
@@ -19,7 +19,7 @@ static size_t	ft_get_len(char *a, char *b)
 	return (ft_maxnbr(strlen(a), strlen(b)));
 }
 
-t_test	test_ft_strchr(void)
+t_test	test_ft_strrchr(void)
 {
 	t_test	test;
 	char	r_char;
@@ -27,13 +27,13 @@ t_test	test_ft_strchr(void)
 	char	*expted;
 	char	*rslt;
 
-	ft_init_test(&test, "ft_strchr");
+	ft_init_test(&test, "ft_strrchr");
 	while (test.n >= test.t_n)
 	{
 		r_str = ft_randstr(20);
 		r_char = ft_randchar();
-		expted = strchr(r_str, r_char);
-		rslt = ft_strchr(r_str, r_char);
+		expted = strrchr(r_str, r_char);
+		rslt = ft_strrchr(r_str, r_char);
 		printf("╭─ TEST #%d ─────────────────────────────────╮\n"
 			"│ String:\n│ BEGIN STRING\n│ %s\n│ END STRING\n"
 			"│ Char to find: %c\n"

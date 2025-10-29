@@ -2,6 +2,7 @@
 	"files.associations": {
 		".env*": "dotenv",
 		"tests.h": "c",
-		"string.h": "c"
+		"string.h": "c",
+		"ctype.h": "c"
 	}
 }

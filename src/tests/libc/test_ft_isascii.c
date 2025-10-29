@@ -1,31 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_ft_isalpha.c                                  :+:      :+:    :+:   */
+/*   test_ft_isascii.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dde-fite <dde-fite@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/29 15:30:59 by dde-fite          #+#    #+#             */
-/*   Updated: 2025/10/05 22:22:31 by dde-fite         ###   ########.fr       */
+/*   Updated: 2025/10/29 19:27:02 by dde-fite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <ctype.h>
-#include "../tests.h"
+#include "tests.h"
 
-t_test	test_ft_isalpha(void)
+t_test	test_ft_isascii(void)
 {
 	t_test	test;
 	char	r_char;
 	int		expted;
 	int		rslt;
 
-	ft_init_test(&test, "ft_isalpha");
+	ft_init_test(&test, "ft_isascii");
 	while (test.n >= test.t_n)
 	{
 		r_char = ft_randnbr(255);
-		expted = isalpha(r_char);
-		rslt = ft_isalpha(r_char);
+		expted = isascii(r_char);
+		rslt = ft_isascii(r_char);
 		printf("╭─ TEST #%d ─────────────────────────────────╮\n"
 			"│ Char: %c\n"
 			"│ Expected: %d\n"

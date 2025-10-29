@@ -1,2 +1,3 @@
 libft_tester
-dist_libft/*
+dist_libft
+build

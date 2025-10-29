@@ -6,14 +6,15 @@
 /*   By: dde-fite <dde-fite@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/16 00:07:42 by david             #+#    #+#             */
-/*   Updated: 2025/10/17 16:51:56 by dde-fite         ###   ########.fr       */
+/*   Updated: 2025/10/29 18:35:55 by dde-fite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "dist_libft/libft.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <bsd/string.h>
+
+#include "libft.h"
 
 typedef struct s_test
 {
