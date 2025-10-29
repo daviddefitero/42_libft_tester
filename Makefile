@@ -6,7 +6,7 @@
 #    By: dde-fite <dde-fite@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/15 21:44:11 by dde-fite          #+#    #+#              #
-#    Updated: 2025/10/21 16:47:30 by dde-fite         ###   ########.fr        #
+#    Updated: 2025/10/29 17:09:55 by dde-fite         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,8 +17,8 @@
 # ******************************** VARIABLES  ******************************** #
 # FILES
 NAME		= libft_tester
-# LIBFT_PATH	= ../
-LIBFT_PATH	= ../42_libft
+LIBFT_PATH	= ../
+# LIBFT_PATH	= ../42_libft
 SRC			:= $(wildcard *.c libc/*.c)
 DIST		= ./dist_libft
 
