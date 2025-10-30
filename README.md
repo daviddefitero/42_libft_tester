@@ -11,7 +11,7 @@
 <h3 align="center">Warning: This project is under development and there may be bugs and errors when testing the functions. Use this tester ONLY to complement other tests of your own or by third parties.</h3>
 
 <p align="center">
-This work is published under the terms of <a href="https://github.com/gcamerli/42unlicense"><b>42 Unlicense</b></a>
+This work is published under the terms of <a href="LICENSE"><b>MIT license</b></a>
 </p>
 
 <div align="center">
